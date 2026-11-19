@@ -1,0 +1,21 @@
+{
+  "name": "agre-jobs",
+  "private": true,
+  "type": "module",
+  "workspaces": [
+    "packages/*",
+    "apps/*"
+  ],
+  "scripts": {
+    "test": "vitest run",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "worker": "npm run start -w @agre/worker",
+    "ingest:now": "npm run ingest:now -w @agre/worker",
+    "db:migrate": "psql \"$DATABASE_URL\" -f packages/db/migrations/001_init.sql -f packages/db/migrations/002_seed_sources.sql"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "typescript": "^5.6.3",
+    "vitest": "^2.1.5"
+  }
+}

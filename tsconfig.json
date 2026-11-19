@@ -1,0 +1,24 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "strict": true,
+    "noUncheckedIndexedAccess": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "resolveJsonModule": true,
+    "jsx": "react-jsx",
+    "lib": ["ES2022", "DOM", "DOM.Iterable"],
+    "types": ["node"],
+    "baseUrl": ".",
+    "paths": {
+      "@agre/taxonomy": ["packages/taxonomy/src/index.ts"],
+      "@agre/core": ["packages/core/src/index.ts"],
+      "@agre/db": ["packages/db/src/index.ts"],
+      "@/*": ["apps/web/*"]
+    }
+  },
+  "include": ["packages/*/src/**/*.ts", "apps/worker/src/**/*.ts", "apps/web/**/*.ts", "apps/web/**/*.tsx"],
+  "exclude": ["node_modules", "**/.next"]
+}
