@@ -1,0 +1,89 @@
+{
+  "meta": {
+    "title": "Agre Jobs — Jobs in agriculture, food and gastronomy",
+    "description": "Jobs shaping the future of food in Türkiye and beyond. Openings in agriculture, food systems and gastronomy."
+  },
+  "nav": {
+    "home": "Home",
+    "jobs": "Jobs",
+    "employers": "Employers",
+    "hub": "Agre Hub",
+    "postJob": "Post a job",
+    "menu": "Menu",
+    "byHub": "an Agre Hub platform",
+    "skip": "Skip to content",
+    "language": "Language"
+  },
+  "hero": {
+    "eyebrow": "Agriculture · Food systems · Gastronomy",
+    "headline": "Jobs shaping the future of food in Türkiye and beyond.",
+    "lead": "Put your skills to work for the future of this land.",
+    "description": "Meet the organizations, ventures and projects working on the future of food in Türkiye and the region, and adding value to local production. Explore jobs and career opportunities.",
+    "statJobs": "open roles",
+    "statSectors": "sectors",
+    "statSubsectors": "subsectors"
+  },
+  "sectors": {
+    "title": "Sectors",
+    "subtitle": "From field to table, the whole food ecosystem.",
+    "subsectors": "{count} subsectors"
+  },
+  "latest": {
+    "title": "Latest jobs",
+    "all": "All jobs"
+  },
+  "cta": {
+    "talentEyebrow": "For professionals",
+    "talentTitle": "Work on the future of food",
+    "talentBody": "Sector-specific roles from agronomy to culinary R&D, export to food tech. Every listing links to its original source.",
+    "talentButton": "Explore jobs",
+    "employerEyebrow": "For employers",
+    "employerTitle": "Reach the right people",
+    "employerBody": "Reach mission-driven candidates in agriculture, food and gastronomy. Free for cooperatives, NGOs and small producers.",
+    "employerButton": "Post a job"
+  },
+  "jobs": {
+    "title": "Jobs",
+    "subtitle": "Open roles in agriculture, food systems and gastronomy.",
+    "count": "{count, plural, =0 {No roles} one {# role} other {# roles}}",
+    "filters": "Filters",
+    "allSectors": "All sectors",
+    "allHubs": "All regions",
+    "allTypes": "All contract types",
+    "apply": "Apply",
+    "clear": "Clear",
+    "emptyTitle": "First roles coming soon",
+    "emptyBody": "Agre Jobs is just opening. Roles are hand-picked and added by the team every week. If you are an employer, your first listing is free.",
+    "noResultsTitle": "No roles match this search",
+    "noResultsBody": "Try another search or clear the filters.",
+    "previous": "Previous",
+    "next": "Next",
+    "demoBanner": "Preview: the roles on this page are samples and appear only in preview deployments."
+  },
+  "employers": {
+    "title": "Agre Jobs for employers",
+    "lead": "Reach mission-driven talent in agriculture, food systems and gastronomy.",
+    "point1Title": "Sector-focused",
+    "point1Body": "Agronomists, chefs, food scientists, export and supply-chain specialists: your role reaches the right audience.",
+    "point2Title": "Community reach",
+    "point2Body": "Shared with the Agre Hub community, AgreFest attendees and our partners.",
+    "point3Title": "Free for small producers",
+    "point3Body": "Free listings for cooperatives, NGOs and small producers in the first year.",
+    "contactTitle": "Write to us to post a job",
+    "contactBody": "Send the role, location and a link to the listing; we will publish it the same week.",
+    "contactButton": "Send an email",
+    "contactPending": "A contact address will be added here soon."
+  },
+  "footer": {
+    "about": "Agre Jobs is the job board and professional network of Agre Hub, the agriculture and food innovation platform.",
+    "explore": "Explore",
+    "company": "Agre Hub",
+    "sources": "Listings link to their original sources; applications happen on those sites.",
+    "rights": "© {year} Agre Hub"
+  },
+  "notFound": {
+    "title": "Page not found",
+    "body": "The page you are looking for may have moved or been removed.",
+    "back": "Back to home"
+  }
+}

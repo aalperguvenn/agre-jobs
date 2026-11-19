@@ -2,6 +2,8 @@ import { buildSavedSearches } from '@agre/core';
 import { requireCurator } from '@/lib/auth';
 
 /** This week's saved searches on the four curator-only platforms (same list as the Monday digest). */
+export const dynamic = 'force-dynamic';
+
 export default async function SavedSearchesPage({ params }: { params: Promise<{ locale: 'tr' | 'en' }> }) {
   await requireCurator();
   const { locale } = await params;
