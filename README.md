@@ -1,4 +1,9 @@
-# Agre Jobs — job aggregation pipeline, outbound links and Popüler tags
+# Agre Jobs
+
+Job board and professional network for agriculture, food systems and gastronomy in Türkiye and the region, by Agre Hub.
+**To put the site online, follow [DEPLOY.md](DEPLOY.md).**
+
+## Job aggregation pipeline, outbound links and Popüler tags
 
 Implements the approved technical outline (*Agre Jobs — Job Aggregation Pipeline: Technical Outline*, 19 Nov 2026)
 on the stack in the architecture notes: Next.js App Router + next-intl, Postgres (Supabase), Meilisearch.
@@ -14,8 +19,9 @@ packages/core       Pure pipeline logic (no I/O): Turkish-aware folding, URL can
                     dedupe decision, expiry rules, curator saved-search links and submission parsing
 packages/db         SQL migrations + Postgres repository (dedupe lookups, upsert, expiry, index feed, clicks, reports)
 apps/worker         pg-boss worker: source adapters, weekly run, Meilisearch rebuild, Monday curator digest
-apps/web            JobCard (external link + telemetry), JobSearchBox + PopularTags, /api/clicks,
-                    /api/jobs/:id/report-closed, curator inbox (/curate/add, /curate/searches), brand Tailwind tokens
+apps/web            Next.js website (TR/EN): landing page, Jobs board, Employers page, curator inbox
+                    (/curate/add, /curate/searches), JobCard (external link + telemetry), JobSearchBox + PopularTags,
+                    /api/clicks, /api/jobs/:id/report-closed, sitemap, robots, brand Tailwind tokens and logos
 ```
 
 ## How sourcing works
@@ -88,6 +94,6 @@ values ('ornek-agtech', 'Örnek AgTech', 'greenhouse', 'ornekagtech', 'agtech', 
 2. Careerjet: confirm batch use, locale and display terms in writing, then enable.
 3. Legal review of the sourcing approach and the İŞKUR licence question (PRD Section 5). This code follows published terms as read
    in Nov 2026; it is not legal advice.
-4. The web files assume the existing next-intl setup (`[locale]` segment, `NextIntlClientProvider`) and Poppins/Montserrat loaded as
-   `--font-poppins` / `--font-montserrat` CSS variables.
+4. Data modes (`apps/web/lib/data.ts`): with `MEILI_HOST` set the site shows real jobs; without it, preview deployments show
+   labelled sample jobs and production shows an honest empty state. Sample jobs never appear on the production deployment.
 5. Curator submissions trigger a full index rebuild; fine at MVP volume, switch to single-document upserts past ~20k jobs.

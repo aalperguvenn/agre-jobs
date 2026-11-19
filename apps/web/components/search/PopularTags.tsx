@@ -13,13 +13,16 @@ interface Props {
   variant: 'board' | 'hero';
   /** Optional: lets the search box mirror the tag immediately. */
   onQueryChange?: (q: string) => void;
+  /** 'dark' on the navy hero, 'light' on paper. */
+  tone?: 'dark' | 'light';
 }
 
 /**
  * Popüler row directly under the search box: exactly five tags, fixed order, fixed labels
  * (see packages/taxonomy/src/popular-tags.ts). Clicking sets ?q=<label>; clicking the active tag clears it.
  */
-export function PopularTags({ variant, onQueryChange }: Props) {
+export function PopularTags({ variant, onQueryChange, tone = 'light' }: Props) {
+  const dark = tone === 'dark';
   const locale = useLocale() as 'tr' | 'en';
   const router = useRouter();
   const pathname = usePathname();
@@ -45,7 +48,7 @@ export function PopularTags({ variant, onQueryChange }: Props) {
 
   return (
     <nav aria-label={locale === 'tr' ? 'Popüler aramalar' : 'Popular searches'} className="mt-3 flex flex-wrap items-center gap-2">
-      <span className="font-montserrat text-xs font-medium uppercase tracking-[0.08em] text-agre-muted">
+      <span className={`mr-1 font-montserrat text-xs font-semibold uppercase tracking-[0.08em] ${dark ? 'text-[#A9AFA0]' : 'text-agre-muted'}`}>
         {POPULAR_HEADING[locale]}
       </span>
       {POPULAR_TAGS.map((tag) => {
@@ -57,11 +60,13 @@ export function PopularTags({ variant, onQueryChange }: Props) {
             aria-pressed={active}
             onClick={() => select(tag.query, tag.id)}
             className={[
-              'rounded-full border px-3 py-1.5 font-montserrat text-sm transition-colors',
-              'focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-agre-navy',
+              'rounded-full border px-3 py-1.5 font-montserrat text-[13px] transition-colors',
+              dark ? 'focus-visible:outline-agre-lime' : 'focus-visible:outline-agre-navy',
               active
-                ? 'border-agre-lime bg-agre-lime text-agre-navy'
-                : 'border-agre-sage/40 bg-white text-agre-ink hover:border-agre-navy',
+                ? 'border-agre-lime bg-agre-lime font-semibold text-agre-navy'
+                : dark
+                  ? 'border-[#2C3B50] bg-transparent text-[#E9EAE2] hover:border-agre-lime hover:text-white'
+                  : 'border-agre-sage/40 bg-white text-agre-ink hover:border-agre-navy',
             ].join(' ')}
           >
             {tag.label}

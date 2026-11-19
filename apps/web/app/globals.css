@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Brand tokens (Agre toolkit, Konsept .1) mirrored as CSS variables for non-Tailwind use. */
+:root {
+  --agre-navy: #121e2e;
+  --agre-lime: #e2ea99;
+  --agre-olive: #a1a27b;
+  --agre-sage: #7a7967;
+  --agre-ink: #231f20;
+  --agre-paper: #f7f6f0;
+  --font-poppins: 'Poppins', 'Segoe UI', system-ui, -apple-system, sans-serif;
+  --font-montserrat: 'Montserrat', 'Segoe UI', system-ui, -apple-system, sans-serif;
+  color-scheme: light;
+}
+
+html { -webkit-text-size-adjust: 100%; }
+body {
+  background: var(--agre-paper);
+  color: var(--agre-ink);
+  font-family: var(--font-montserrat);
+  font-size: 15px;
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+}
+h1, h2, h3, h4 { font-family: var(--font-poppins); text-wrap: balance; }
+:focus-visible { outline: 2px solid var(--agre-navy); outline-offset: 2px; }
+.on-navy :focus-visible { outline-color: var(--agre-lime); }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { transition: none !important; scroll-behavior: auto !important; }
+}

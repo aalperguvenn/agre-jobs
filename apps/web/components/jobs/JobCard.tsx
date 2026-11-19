@@ -122,7 +122,7 @@ export function JobCard({ job, placement, position, query }: Props) {
 /** Platform name as plain text (no third-party logos without permission). */
 export function SourceBadge({ platform }: { platform: PlatformKey }) {
   return (
-    <span className="rounded-[2px] border border-agre-navy/20 px-2 py-0.5 font-montserrat text-[11px] font-medium uppercase tracking-[0.04em] text-agre-navy">
+    <span className="rounded-[2px] border border-agre-navy/20 px-2 py-0.5 font-montserrat text-[12px] font-semibold text-agre-navy">
       {PLATFORMS[platform]}
     </span>
   );

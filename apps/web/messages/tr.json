@@ -1,0 +1,89 @@
+{
+  "meta": {
+    "title": "Agre Jobs — Tarım, gıda ve gastronomi işleri",
+    "description": "Türkiye ve ötesinde gıdanın geleceğine dair işler. Tarım, gıda sistemleri ve gastronomi için iş ilanları."
+  },
+  "nav": {
+    "home": "Ana sayfa",
+    "jobs": "İş İlanları",
+    "employers": "İşverenler",
+    "hub": "Agre Hub",
+    "postJob": "İlan ver",
+    "menu": "Menü",
+    "byHub": "bir Agre Hub platformu",
+    "skip": "İçeriğe geç",
+    "language": "Dil"
+  },
+  "hero": {
+    "eyebrow": "Tarım · Gıda sistemleri · Gastronomi",
+    "headline": "Türkiye ve ötesinde gıdanın geleceğine dair işler.",
+    "lead": "Yeteneklerinle bu toprakların geleceğine katkı sağla.",
+    "description": "Türkiye’de ve bölgede gıdanın geleceği için çalışan, yerel üretime değer katan kurumları, girişimleri ve projeleri tanı. İş ilanlarını ve kariyer fırsatlarını keşfet.",
+    "statJobs": "açık ilan",
+    "statSectors": "sektör",
+    "statSubsectors": "alt sektör"
+  },
+  "sectors": {
+    "title": "Sektörler",
+    "subtitle": "Tarladan sofraya, gıda ekosisteminin tamamı.",
+    "subsectors": "{count} alt sektör"
+  },
+  "latest": {
+    "title": "Son ilanlar",
+    "all": "Tüm ilanlar"
+  },
+  "cta": {
+    "talentEyebrow": "Profesyoneller için",
+    "talentTitle": "Gıdanın geleceğinde çalış",
+    "talentBody": "Agronomiden mutfak Ar-Ge’sine, ihracattan gıda teknolojisine kadar sektöre özel ilanlar. Her ilan orijinal kaynağına yönlendirir.",
+    "talentButton": "İlanları keşfet",
+    "employerEyebrow": "İşverenler için",
+    "employerTitle": "Doğru insanlara ulaş",
+    "employerBody": "Tarım, gıda ve gastronomi alanında misyon odaklı adaylara ulaşın. Kooperatifler, STK’lar ve küçük üreticiler için ücretsiz.",
+    "employerButton": "İlan ver"
+  },
+  "jobs": {
+    "title": "İş İlanları",
+    "subtitle": "Tarım, gıda sistemleri ve gastronomide açık pozisyonlar.",
+    "count": "{count, plural, =0 {İlan yok} other {# ilan}}",
+    "filters": "Filtreler",
+    "allSectors": "Tüm sektörler",
+    "allHubs": "Tüm bölgeler",
+    "allTypes": "Tüm çalışma şekilleri",
+    "apply": "Uygula",
+    "clear": "Temizle",
+    "emptyTitle": "İlk ilanlar çok yakında",
+    "emptyBody": "Agre Jobs yeni açılıyor. İlanlar her hafta ekip tarafından seçilip ekleniyor. İşverenseniz ilk ilanınızı ücretsiz verebilirsiniz.",
+    "noResultsTitle": "Bu aramaya uygun ilan bulunamadı",
+    "noResultsBody": "Farklı bir arama deneyin ya da filtreleri temizleyin.",
+    "previous": "Önceki",
+    "next": "Sonraki",
+    "demoBanner": "Önizleme: bu sayfadaki ilanlar örnektir ve yalnızca önizleme ortamında görünür."
+  },
+  "employers": {
+    "title": "İşverenler için Agre Jobs",
+    "lead": "Tarım, gıda sistemleri ve gastronomi alanında misyon odaklı yeteneklere ulaşın.",
+    "point1Title": "Sektöre odaklı",
+    "point1Body": "Agronomistler, şefler, gıda bilimciler, ihracat ve tedarik zinciri uzmanları: ilanınız doğru kitleye ulaşır.",
+    "point2Title": "Topluluk desteği",
+    "point2Body": "Agre Hub topluluğu, AgreFest katılımcıları ve iş ortaklarımızla paylaşılır.",
+    "point3Title": "Küçük üreticilere ücretsiz",
+    "point3Body": "Kooperatifler, STK’lar ve küçük üreticiler için ilk yıl ücretsiz ilan.",
+    "contactTitle": "İlan vermek için bize yazın",
+    "contactBody": "Pozisyonu, konumu ve ilan bağlantısını gönderin; ilanınızı aynı hafta yayına alalım.",
+    "contactButton": "E-posta gönder",
+    "contactPending": "İletişim adresi yakında burada olacak."
+  },
+  "footer": {
+    "about": "Agre Jobs, tarım ve gıda inovasyonu platformu Agre Hub’ın iş ilanı ve profesyonel ağ girişimidir.",
+    "explore": "Keşfet",
+    "company": "Agre Hub",
+    "sources": "İlanlar orijinal kaynaklarına yönlendirir; başvurular ilgili sitede yapılır.",
+    "rights": "© {year} Agre Hub"
+  },
+  "notFound": {
+    "title": "Sayfa bulunamadı",
+    "body": "Aradığınız sayfa taşınmış ya da kaldırılmış olabilir.",
+    "back": "Ana sayfaya dön"
+  }
+}
