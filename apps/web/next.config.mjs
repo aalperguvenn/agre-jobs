@@ -1,6 +1,9 @@
+import path from 'node:path';
+import { fileURLToPath } from 'node:url';
 import createNextIntlPlugin from 'next-intl/plugin';
 
 const withNextIntl = createNextIntlPlugin('./i18n/request.ts');
+const appDir = path.dirname(fileURLToPath(import.meta.url));
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
@@ -9,6 +12,11 @@ const nextConfig = {
   // Node-only libraries stay out of the bundle.
   serverExternalPackages: ['pg', 'pg-boss'],
   poweredByHeader: false,
+  // "@/..." imports resolve to this folder even if tsconfig paths cannot be read (e.g. an unexpected TypeScript version).
+  webpack(config) {
+    config.resolve.alias = { ...config.resolve.alias, '@': appDir };
+    return config;
+  },
   async headers() {
     return [{
       source: '/:path*',
